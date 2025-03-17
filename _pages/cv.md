@@ -16,9 +16,10 @@ Education
 
 Work Experience
 ======
-* 03.2022 – Present\
-  Prinicipal Computer Vision Engineer\
-  Sporttotal AG, Köln, Germany
+* 03.2023 - Present\
+  Head of Artificial Intelligence Department\
+  Sporttotal Technology GmbH, Cologne, Germany
+  At Sporttotal Technology, we develop AI-powered systems for fully automated sports broadcasting, immersive content generation, and advanced sports analytics. My work spans real-time object detection and tracking on edge devices, human pose estimation, 3D body reconstruction, and identity tracking for sports productions and analytics. Additionally, I contribute to texture generation from sparse image samples using optimization techniques and diffusion-based inpainting, enabling high-fidelity 3D game reconstructions and interactive viewing experiences.
 
 * 04.2021 – 03.2022\
   Staff Applied Research Scientist\
