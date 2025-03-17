@@ -5,7 +5,7 @@ venue: 'Nature - Scientific Data'
 date: 2024-05-15
 category: 'accepted'
 pdf: 'https://www.nature.com/articles/s41597-024-03312-1.pdf'
-teaser: '2024-pferd.png'
+teaser: '2024-PFERD.png'
 bibtex: '2024-pferd.bib'
 permalink: /publication/2024-PFERD
 collection: publications
