@@ -19,7 +19,7 @@ from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.
 
 
 <div id="chat-container" style="max-width: 600px; margin-top: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 10px; background: #f7f7f7;">
-  <h3 style="margin-top: 0;">💬 Interview Me Now!</h3>
+  <h3 style="margin-top: 0;">💬 Interview Me Right Now! </h3>
   <div id="chat-box" style="height: 200px; overflow-y: auto; background: white; padding: 0.5rem; border: 1px solid #ddd;"></div>
   <input type="text" id="user-input" placeholder="Ask me about my career, skills, etc." style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc;">
 </div>
@@ -58,4 +58,6 @@ from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.
     }
   });
 </script>
-
+<p style="font-size: 0.9em; color: #666; text-align: right; margin-top: 0.5rem;">
+  💡 Powered by my linkedin-profile-chatbot at: <a href="https://github.com/nghorbani/linkedin-profile-chatbot" target="_blank">View the code</a>.
+</p>
