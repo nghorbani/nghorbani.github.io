@@ -17,3 +17,45 @@ Previously I was an Applied Research Scientist at [Kaia Health GmbH](https://kai
 I have a BSc. in Electrical Engineering from [Tabriz](https://www.youtube.com/watch?v=OWb1yP-KpMc) Azad University, [Iran](https://www.youtube.com/watch?v=CuITzmlIvbc), and an MSc. in [Neural Information Processing](https://www.neuroschool-tuebingen.de/master/neural-inf-process/) 
 from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.de/), Germany.
 
+
+<div id="chat-container" style="max-width: 600px; margin-top: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 10px; background: #f7f7f7;">
+  <h3 style="margin-top: 0;">💬 Chat with My Profile</h3>
+  <div id="chat-box" style="height: 200px; overflow-y: auto; background: white; padding: 0.5rem; border: 1px solid #ddd;"></div>
+  <input type="text" id="user-input" placeholder="Ask me about my career, skills, etc." style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc;">
+</div>
+
+<script>
+  const chatBox = document.getElementById("chat-box");
+  const userInput = document.getElementById("user-input");
+  let history = [];
+
+  function appendMessage(role, content) {
+    const el = document.createElement("div");
+    el.innerHTML = `<strong>${role === "user" ? "You" : "Nima"}:</strong> ${content}`;
+    el.style.margin = "0.5rem 0";
+    chatBox.appendChild(el);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+
+  userInput.addEventListener("keypress", async function (e) {
+    if (e.key === "Enter" && userInput.value.trim() !== "") {
+      const message = userInput.value.trim();
+      appendMessage("user", message);
+      userInput.value = "";
+
+      const response = await fetch("https://linkedin-profile-chatbot.onrender.com/chat", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ message, history }),
+      });
+
+      const data = await response.json();
+      const reply = data.response;
+
+      appendMessage("assistant", reply);
+      history.push({ role: "user", content: message });
+      history.push({ role: "assistant", content: reply });
+    }
+  });
+</script>
+
