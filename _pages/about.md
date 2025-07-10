@@ -59,5 +59,8 @@ from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.
   });
 </script>
 <p style="font-size: 0.9em; color: #666; text-align: left; margin-top: 0.5rem;">
-  💡 Powered by my [Linkedin profile chatbot](https://github.com/nghorbani/linkedin_profile_chatbot/).
+  💡 Powered by my 
+  <a href="https://github.com/nghorbani/linkedin_profile_chatbot/" target="_blank" style="color: #007acc;">
+    LinkedIn profile chatbot
+  </a>.
 </p>
