@@ -17,14 +17,12 @@ Previously I was an Applied Research Scientist at [Kaia Health GmbH](https://kai
 I have a BSc. in Electrical Engineering from [Tabriz](https://www.youtube.com/watch?v=OWb1yP-KpMc) Azad University, [Iran](https://www.youtube.com/watch?v=CuITzmlIvbc), and an MSc. in [Neural Information Processing](https://www.neuroschool-tuebingen.de/master/neural-inf-process/) 
 from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.de/), Germany.
 
-<iframe
-  src="https://huggingface.co/spaces/nghorbani/linkedin_profile_chatbot"
-  width="100%"
-  height="700"
-  style="border:none;"
-  allow="clipboard-write; microphone"
-></iframe>
-
+<div style="position:relative; width:100%; height:600px;">
+  <iframe
+    src="https://nghorbani-linkedin-profile-chatbot.hf.space"
+    style="position:absolute; width:100%; height:100%; border:none;"
+  ></iframe>
+</div>
 
 
 <p style="font-size: 0.9em; color: #666; text-align: left; margin-top: 0.5rem;">
