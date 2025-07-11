@@ -17,57 +17,13 @@ Previously I was an Applied Research Scientist at [Kaia Health GmbH](https://kai
 I have a BSc. in Electrical Engineering from [Tabriz](https://www.youtube.com/watch?v=OWb1yP-KpMc) Azad University, [Iran](https://www.youtube.com/watch?v=CuITzmlIvbc), and an MSc. in [Neural Information Processing](https://www.neuroschool-tuebingen.de/master/neural-inf-process/) 
 from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.de/), Germany.
 
-<div id="chat-container" style="max-width: 600px; margin-top: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 10px; background: #f7f7f7;">
-  <h3 style="margin-top: 0;">💬 Let's Chat! </h3>
-  <div id="chat-box" style="height: 200px; overflow-y: auto; background: white; padding: 0.5rem; border: 1px solid #ddd;"></div>
-  <input type="text" id="user-input" placeholder="Ask me about my career, skills, etc." style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc;">
-</div>
-
-<script>
-  window.addEventListener("DOMContentLoaded", () => {
-    import("https://esm.sh/@gradio/client").then(async ({ Client }) => {
-      const chatBox = document.getElementById("chat-box");
-      const userInput = document.getElementById("user-input");
-      let messages = [];
-
-      const client = await Client.connect("nghorbani/linkedin_profile_chatbot");
-
-      function appendMessage(role, content) {
-        const el = document.createElement("div");
-        el.innerHTML = `<strong>${role === "user" ? "You" : "Nima"}:</strong> ${content}`;
-        el.style.margin = "0.5rem 0";
-        chatBox.appendChild(el);
-        chatBox.scrollTop = chatBox.scrollHeight;
-      }
-
-      userInput.addEventListener("keypress", async function (e) {
-        if (e.key === "Enter" && userInput.value.trim() !== "") {
-          const userMessage = {
-            role: "user",
-            content: userInput.value.trim()
-          };
-
-          appendMessage("user", userMessage.content);
-          messages.push(userMessage);
-          userInput.value = "";
-
-          try {
-            const result = await client.predict("/chat", {
-              messages: messages
-            });
-
-            const botMessage = result.data;
-            messages.push(botMessage);
-            appendMessage("assistant", botMessage.content);
-          } catch (err) {
-            console.error("Chatbot error:", err);
-            appendMessage("assistant", "⚠️ Error reaching the chatbot.");
-          }
-        }
-      });
-    });
-  });
-</script>
+<iframe
+  src="https://huggingface.co/spaces/nghorbani/linkedin_profile_chatbot"
+  width="100%"
+  height="700"
+  style="border:none;"
+  allow="clipboard-write; microphone"
+></iframe>
 
 
 
