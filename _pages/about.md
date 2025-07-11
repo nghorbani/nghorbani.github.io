@@ -17,12 +17,17 @@ Previously I was an Applied Research Scientist at [Kaia Health GmbH](https://kai
 I have a BSc. in Electrical Engineering from [Tabriz](https://www.youtube.com/watch?v=OWb1yP-KpMc) Azad University, [Iran](https://www.youtube.com/watch?v=CuITzmlIvbc), and an MSc. in [Neural Information Processing](https://www.neuroschool-tuebingen.de/master/neural-inf-process/) 
 from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.de/), Germany.
 
-<script
-  type="module"
-  src="https://gradio.s3-us-west-2.amazonaws.com/5.34.2/gradio.js"
-></script>
+<div style="max-width: 900px; margin: auto;">
+  <script
+    type="module"
+    src="https://gradio.s3-us-west-2.amazonaws.com/5.34.2/gradio.js"
+  ></script>
 
-<gradio-app src="https://nghorbani-linkedin-profile-chatbot.hf.space"></gradio-app>
+  <gradio-app
+    src="https://nghorbani-linkedin-profile-chatbot.hf.space"
+    style="border-radius: 12px; overflow: hidden;"
+  ></gradio-app>
+</div>
 
 
 <p style="font-size: 0.9em; color: #666; text-align: left; margin-top: 0.5rem;">
