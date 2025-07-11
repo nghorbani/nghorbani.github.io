@@ -23,51 +23,52 @@ from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.
   <input type="text" id="user-input" placeholder="Ask me about my career, skills, etc." style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc;">
 </div>
 
-<script type="module">
-  import { Client } from "https://esm.sh/@gradio/client";
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    import("https://esm.sh/@gradio/client").then(async ({ Client }) => {
+      const chatBox = document.getElementById("chat-box");
+      const userInput = document.getElementById("user-input");
+      let messages = [];
 
-  (async () => {
-    const chatBox = document.getElementById("chat-box");
-    const userInput = document.getElementById("user-input");
-    let messages = [];
+      const client = await Client.connect("nghorbani/linkedin_profile_chatbot");
 
-    const client = await Client.connect("nghorbani/linkedin_profile_chatbot");
-
-    function appendMessage(role, content) {
-      const el = document.createElement("div");
-      el.innerHTML = `<strong>${role === "user" ? "You" : "Nima"}:</strong> ${content}`;
-      el.style.margin = "0.5rem 0";
-      chatBox.appendChild(el);
-      chatBox.scrollTop = chatBox.scrollHeight;
-    }
-
-    userInput.addEventListener("keypress", async function (e) {
-      if (e.key === "Enter" && userInput.value.trim() !== "") {
-        const userMessage = {
-          role: "user",
-          content: userInput.value.trim()
-        };
-
-        appendMessage("user", userMessage.content);
-        messages.push(userMessage);
-        userInput.value = "";
-
-        try {
-          const result = await client.predict("/chat", {
-            messages: messages
-          });
-
-          const botMessage = result.data; // { role: "assistant", content: "..." }
-          messages.push(botMessage);
-          appendMessage("assistant", botMessage.content);
-        } catch (err) {
-          console.error("Chatbot error:", err);
-          appendMessage("assistant", "⚠️ Error reaching the chatbot.");
-        }
+      function appendMessage(role, content) {
+        const el = document.createElement("div");
+        el.innerHTML = `<strong>${role === "user" ? "You" : "Nima"}:</strong> ${content}`;
+        el.style.margin = "0.5rem 0";
+        chatBox.appendChild(el);
+        chatBox.scrollTop = chatBox.scrollHeight;
       }
+
+      userInput.addEventListener("keypress", async function (e) {
+        if (e.key === "Enter" && userInput.value.trim() !== "") {
+          const userMessage = {
+            role: "user",
+            content: userInput.value.trim()
+          };
+
+          appendMessage("user", userMessage.content);
+          messages.push(userMessage);
+          userInput.value = "";
+
+          try {
+            const result = await client.predict("/chat", {
+              messages: messages
+            });
+
+            const botMessage = result.data;
+            messages.push(botMessage);
+            appendMessage("assistant", botMessage.content);
+          } catch (err) {
+            console.error("Chatbot error:", err);
+            appendMessage("assistant", "⚠️ Error reaching the chatbot.");
+          }
+        }
+      });
     });
-  })();
+  });
 </script>
+
 
 
 <p style="font-size: 0.9em; color: #666; text-align: left; margin-top: 0.5rem;">
