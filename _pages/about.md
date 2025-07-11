@@ -17,17 +17,20 @@ Previously I was an Applied Research Scientist at [Kaia Health GmbH](https://kai
 I have a BSc. in Electrical Engineering from [Tabriz](https://www.youtube.com/watch?v=OWb1yP-KpMc) Azad University, [Iran](https://www.youtube.com/watch?v=CuITzmlIvbc), and an MSc. in [Neural Information Processing](https://www.neuroschool-tuebingen.de/master/neural-inf-process/) 
 from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.de/), Germany.
 
-
 <div id="chat-container" style="max-width: 600px; margin-top: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 10px; background: #f7f7f7;">
   <h3 style="margin-top: 0;">💬 Let's Chat! </h3>
   <div id="chat-box" style="height: 200px; overflow-y: auto; background: white; padding: 0.5rem; border: 1px solid #ddd;"></div>
   <input type="text" id="user-input" placeholder="Ask me about my career, skills, etc." style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; border: 1px solid #ccc;">
 </div>
 
-<script>
+<script type="module">
+  import { Client } from "https://esm.sh/@gradio/client";
+
   const chatBox = document.getElementById("chat-box");
   const userInput = document.getElementById("user-input");
   let history = [];
+
+  const client = await Client.connect("nghorbani/linkedin_profile_chatbot");
 
   function appendMessage(role, content) {
     const el = document.createElement("div");
@@ -43,21 +46,23 @@ from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.
       appendMessage("user", message);
       userInput.value = "";
 
-      const response = await fetch("https://linkedin-profile-chatbot.onrender.com/chat", {
-        method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({ message, history }),
-      });
+      try {
+        const result = await client.predict("/chat", {
+          message: message,
+          history: history,
+        });
 
-      const data = await response.json();
-      const reply = data.response;
-
-      appendMessage("assistant", reply);
-      history.push({ role: "user", content: message });
-      history.push({ role: "assistant", content: reply });
+        const reply = result.data;
+        appendMessage("assistant", reply);
+        history.push([message, reply]);
+      } catch (err) {
+        appendMessage("assistant", "⚠️ Error reaching the chatbot.");
+        console.error(err);
+      }
     }
   });
 </script>
+
 <p style="font-size: 0.9em; color: #666; text-align: left; margin-top: 0.5rem;">
   💡 Powered by my 
   <a href="https://github.com/nghorbani/linkedin_profile_chatbot/" target="_blank" style="color: #007acc;">
