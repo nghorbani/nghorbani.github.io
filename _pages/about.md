@@ -49,10 +49,8 @@ from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.
         userInput.value = "";
 
         try {
-          const result = await client.predict("/chat", {
-            message,
-            history
-          });
+const result = await client.predict("/chat", [message]);
+
 
           const reply = result.data;
           appendMessage("assistant", reply);
