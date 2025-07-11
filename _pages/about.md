@@ -28,7 +28,7 @@ from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.
 
   const chatBox = document.getElementById("chat-box");
   const userInput = document.getElementById("user-input");
-  let history = [];
+  let messages = [];
 
   const client = await Client.connect("nghorbani/linkedin_profile_chatbot");
 
@@ -42,26 +42,31 @@ from [Eberhard Karls University of Tübingen](https://www.neuroschool-tuebingen.
 
   userInput.addEventListener("keypress", async function (e) {
     if (e.key === "Enter" && userInput.value.trim() !== "") {
-      const message = userInput.value.trim();
-      appendMessage("user", message);
+      const userMessage = {
+        role: "user",
+        content: userInput.value.trim()
+      };
+
+      appendMessage("user", userMessage.content);
+      messages.push(userMessage);
       userInput.value = "";
 
       try {
         const result = await client.predict("/chat", {
-          message: message,
-          history: history,
+          messages: messages
         });
 
-        const reply = result.data;
-        appendMessage("assistant", reply);
-        history.push([message, reply]);
+        const botMessage = result.data; // { role: "assistant", content: "..." }
+        messages.push(botMessage);
+        appendMessage("assistant", botMessage.content);
       } catch (err) {
+        console.error("Chatbot error:", err);
         appendMessage("assistant", "⚠️ Error reaching the chatbot.");
-        console.error(err);
       }
     }
   });
 </script>
+
 
 <p style="font-size: 0.9em; color: #666; text-align: left; margin-top: 0.5rem;">
   💡 Powered by my 
