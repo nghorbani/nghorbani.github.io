@@ -1,8 +1,0 @@
-{% include base_path %}
-
-<div class="page__footer-copyright">
-  {% if site.data.ui-text[site.locale].follow_label %}<strong>{{ site.data.ui-text[site.locale].follow_label }}</strong>{% endif %}
-  {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a> &middot;{% endif %}
-  {% if site.atom_feed.hide != true %}<a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a> &middot;{% endif %}
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} &middot; Last updated {{ "now" | date: '%Y-%m-%d' }} &middot; <a href="/sitemap/">{{ site.data.ui-text[site.locale].site_map | default: "Sitemap" }}</a>
-</div>

@@ -1,11 +1,28 @@
 ---
+layout: about
+title: about
 permalink: /
-title: "About Me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+subtitle: Principal AI Architect @ <a href='https://cubert-hyperspectral.com/'>Cubert Hyperspectral</a>. Ulm, Germany.
+
+profile:
+  align: right
+  image: prof_pic.png
+  image_circular: false
+  more_info: >
+    <p>Ulm, Germany</p>
+
+selected_papers: false
+social: true
+
+announcements:
+  enabled: true
+  scrollable: true
+  limit: 5
+
+latest_posts:
+  enabled: true
+  scrollable: true
+  limit: 3
 ---
 
 I work at the intersection of computer vision, computer graphics, and machine learning, building AI systems that extract structure and meaning from complex visual data.
@@ -17,5 +34,3 @@ Today, I work at [Cubert GmbH](https://cubert-hyperspectral.com/) on AI framewor
 I combine research depth with engineering execution and product-oriented AI leadership, with experience spanning 3D human understanding, visual representation learning, applied machine learning, and AI system design.
 
 I hold a BSc in Electrical Engineering from Tabriz Azad University, Iran, and an MSc in [Neural Information Processing](https://www.neuroschool-tuebingen.de/) from [Eberhard Karls University of Tübingen](https://uni-tuebingen.de/), Germany.
-
-{% include recent-news.html %}
