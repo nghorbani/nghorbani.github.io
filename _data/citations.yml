@@ -1,16 +1,16 @@
 metadata:
-  last_updated: '2026-05-27'
+  last_updated: '2026-06-19'
 papers:
   8syFJ-0AAAAJ:9yKSN-GCB0IC:
-    citations: 2947
+    citations: 3029
     title: 'Expressive body capture: 3d hands, face, and body from a single image'
     year: '2019'
   8syFJ-0AAAAJ:IjCSPb-OGe4C:
-    citations: 620
+    citations: 644
     title: 'GRAB: A dataset of whole-body human grasping of objects'
     year: '2020'
   8syFJ-0AAAAJ:Tyk-4Ss8FVUC:
-    citations: 61
+    citations: 63
     title: 'Soma: Solving optical marker-based mocap automatically'
     year: '2021'
   8syFJ-0AAAAJ:UeHWp8X0CEIC:
@@ -26,7 +26,7 @@ papers:
     title: 'SOMA: Solving Optical Marker-Based MoCap Automatically** Supplementary Material'
     year: Unknown Year
   8syFJ-0AAAAJ:YsMSGLbcyi4C:
-    citations: 24
+    citations: 25
     title: The poses for equine research dataset (pferd)
     year: '2024'
   8syFJ-0AAAAJ:d1gkVwhDpl0C:
@@ -38,10 +38,10 @@ papers:
     title: 'Expressive Body Capture: 3D Hands, Face, and Body from a Single Image** Supplementary Material'
     year: Unknown Year
   8syFJ-0AAAAJ:u-x6o8ySG0sC:
-    citations: 2307
+    citations: 2389
     title: 'AMASS: Archive of Motion Capture as Surface Shapes'
     year: '2019'
   8syFJ-0AAAAJ:zYLM7Y9cAGgC:
-    citations: 32
+    citations: 33
     title: 'hsmal: Detailed horse shape and pose reconstruction for motion pattern recognition'
     year: '2021'
