@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-22'
+  last_updated: '2026-07-01'
 papers:
   8syFJ-0AAAAJ:9yKSN-GCB0IC:
-    citations: 3030
+    citations: 3063
     title: 'Expressive body capture: 3d hands, face, and body from a single image'
     year: '2019'
   8syFJ-0AAAAJ:IjCSPb-OGe4C:
-    citations: 647
+    citations: 654
     title: 'GRAB: A dataset of whole-body human grasping of objects'
     year: '2020'
   8syFJ-0AAAAJ:Tyk-4Ss8FVUC:
@@ -38,10 +38,10 @@ papers:
     title: 'Expressive Body Capture: 3D Hands, Face, and Body from a Single Image** Supplementary Material'
     year: Unknown Year
   8syFJ-0AAAAJ:u-x6o8ySG0sC:
-    citations: 2390
+    citations: 2418
     title: 'AMASS: Archive of Motion Capture as Surface Shapes'
     year: '2019'
   8syFJ-0AAAAJ:zYLM7Y9cAGgC:
-    citations: 33
+    citations: 34
     title: 'hsmal: Detailed horse shape and pose reconstruction for motion pattern recognition'
     year: '2021'
