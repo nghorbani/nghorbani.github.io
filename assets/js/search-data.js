@@ -44,6 +44,9 @@ ninja.data = [{
       },{id: "news-speaking-at-the-conference-for-hyperspectral-imaging-in-industry-2026-20-21-may-2026-graz-gösting-austria-talk-cuvisnext-ai-evolution-of-real-time-hyperspectral-intelligence",
           title: 'Speaking at the Conference for Hyperspectral Imaging in Industry 2026, 20–21 May 2026,...',
           description: "",
+          section: "News",},{id: "news-attending-eccv-2026-in-malmö-sweden-8-12-september-2026-workshops-8-9-sep-main-conference-10-12-sep-happy-to-meet-and-talk-about-hyperspectral-imaging-industrial-inspection-and-ai-for-computer-vision",
+          title: 'Attending ECCV 2026 in Malmö, Sweden, 8–12 September 2026 (workshops 8–9 Sep, main...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
