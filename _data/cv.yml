@@ -44,16 +44,16 @@ cv:
         summary: >
           Focus on AI frameworks, agentic tools, and scalable data-processing systems
           for hyperspectral imaging and industrial computer vision. Bridge advanced
-          sensor data with modern AI workflows, including modular processing pipelines,
-          machine-learning integration, natural-language analysis of visual and
-          spectral data, and production-oriented systems for real-world industrial
+          sensor data with modern AI workflows, including modular processing
+          pipelines, machine-learning integration, natural-language analysis of visual
+          and spectral data, and production-oriented systems for real-world industrial
           applications.
 
       - company: Sporttotal Technology GmbH
         position: Head of Artificial Intelligence
         location: Berlin, Germany (Remote)
         start_date: 2024-09
-        end_date: 2025-10
+        end_date: 2025-09
         summary: >
           Developed AI-powered systems for fully automated sports broadcasting,
           immersive content generation, and advanced sports analytics. Work spanned
@@ -72,35 +72,35 @@ cv:
 
       - company: Kaia Health Software GmbH
         position: Staff Applied Research Scientist
-        location: Munich, Germany
-        start_date: 2021-04
-        end_date: 2022-03
+        location: Munich, Germany (Remote)
+        start_date: 2022-04
+        end_date: 2023-02
         summary: >
           Kaia Health is a digital therapeutics company that leverages AI-powered
           computer vision to deliver real-time, personalized musculoskeletal care
-          through a smartphone camera. Researched and developed core ML models for
-          3D human pose estimation, motion analysis, and real-time feedback
-          generation, enabling accurate human body tracking and automated movement
-          assessments without wearable sensors.
+          through a smartphone camera. Researched and developed core ML models for 3D
+          human pose estimation, motion analysis, and real-time feedback generation,
+          enabling accurate human body tracking and automated movement assessments
+          without wearable sensors.
 
       - company: Max Planck Institute for Intelligent Systems
-        position: Research Engineer, Digital Humans in Motion
+        position: Research Software Engineer, Digital Humans in Motion
         location: Tübingen, Germany
         start_date: 2018-02
-        end_date: 2021-04
+        end_date: 2022-03
         summary: >
           Perceiving Systems Department (Prof. Michael Black). Contributed to the
           development of foundational human body models and large-scale datasets that
-          have significantly advanced the fields of 3D human reconstruction and
-          motion analysis. Worked on SMPL-X (expressive human body model) and AMASS
-          (dataset unifying marker-based motion capture with parametric body models
-          for large-scale learning). Helped develop VPoser, a body pose prior for
-          robust 2D-to-3D human lifting in SMPLify-X. Also contributed to GRAB (a
-          generative model for human grasping) and SOMA (a framework for synthetic
-          data generation for human-object interaction understanding).
+          have significantly advanced the fields of 3D human reconstruction and motion
+          analysis. Worked on SMPL-X (expressive human body model) and AMASS (dataset
+          unifying marker-based motion capture with parametric body models for
+          large-scale learning). Helped develop VPoser, a body pose prior for robust
+          2D-to-3D human lifting in SMPLify-X. Also contributed to GRAB (a generative
+          model for human grasping) and SOMA (a framework for synthetic data
+          generation for human-object interaction understanding).
 
       - company: SuperPipe International Co.
-        position: Software Engineer, ERP Development & Implementation
+        position: Software Engineer, ERP Development and Implementation (Odoo)
         location: Tehran, Iran
         start_date: 2013-04
         end_date: 2015-03
@@ -110,3 +110,4 @@ cv:
           warehouse, and inventory teams to integrate their processes into the ERP,
           supervised by the operational processes department to ensure industry
           standards were adapted and integrated for the best implementation impact.
+
