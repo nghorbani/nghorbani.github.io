@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Speaking at the **Conference for Hyperspectral Imaging in Industry 2026**, 20–21 May 2026, Graz-Gösting, Austria — talk: *CuvisNext: AI Evolution of Real-time Hyperspectral Intelligence*.
+Speaking at the **Conference for Hyperspectral Imaging in Industry 2026**, 20–21 May 2026, Graz-Gösting, Austria — talk: _CuvisNext: AI Evolution of Real-time Hyperspectral Intelligence_.
