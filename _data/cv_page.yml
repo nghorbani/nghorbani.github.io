@@ -1,0 +1,7 @@
+# Page-only fields for /cv/ (read by _layouts/cv.liquid). They live outside _data/cv.yml
+# because RenderCV validates that file strictly and rejects unknown keys.
+label: Principal AI Architect
+summary: >
+  Computer vision, computer graphics, and machine learning practitioner building AI 
+  systems that extract structure and meaning from complex visual data. Currently leading 
+  AI frameworks and data-processing systems for hyperspectral imaging at Cubert GmbH.

@@ -1,15 +1,7 @@
 cv:
   name: Nima Ghorbani
-  label: Principal AI Architect
   email: nima.gbani@gmail.com
   location: Ulm, Germany
-  image: ""
-  summary: >
-    Computer vision, computer graphics, and machine learning practitioner building
-    AI systems that extract structure and meaning from complex visual data. Currently
-    leading AI frameworks and data-processing systems for hyperspectral imaging at
-    Cubert GmbH.
-
   social_networks:
     - network: GitHub
       username: nghorbani
