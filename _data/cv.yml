@@ -29,10 +29,20 @@ cv:
 
     Experience:
       - company: Cubert Hyperspectral (Cubert GmbH)
+        position: Head of Artificial Intelligence
+        location: Ulm, Germany (On-site)
+        start_date: 2026-08
+        end_date: present
+        summary: >
+          Lead AI at Cubert: the Cuvis.AI framework and its integration into the CuvisNEXT
+          software, the AI roadmap and team, and AI solutions for industrial hyperspectral
+          customers.
+
+      - company: Cubert Hyperspectral (Cubert GmbH)
         position: Principal AI Architect
         location: Ulm, Germany (On-site)
         start_date: 2025-10
-        end_date: present
+        end_date: 2026-08
         summary: >
           Focus on AI frameworks, agentic tools, and scalable data-processing systems
           for hyperspectral imaging and industrial computer vision. Bridge advanced
@@ -102,3 +112,12 @@ cv:
           warehouse, and inventory teams to integrate their processes into the ERP,
           supervised by the operational processes department to ensure industry
           standards were adapted and integrated for the best implementation impact.
+
+    Invited Talks:
+      - bullet: >
+          **Cuvis.AI for RGB+: decisions beyond the visible.** Lecture in the training course
+          *AI for spectral and hyperspectral data processing*, Wageningen University & Research,
+          Wageningen, the Netherlands, 12 November 2026.
+      - bullet: >
+          **CuvisNext: AI Evolution of Real-time Hyperspectral Intelligence.** Conference for
+          Hyperspectral Imaging in Industry 2026, Graz-Gösting, Austria, 20 to 21 May 2026.

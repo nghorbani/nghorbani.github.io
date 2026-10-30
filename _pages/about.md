@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Principal AI Architect @ <a href='https://cubert-hyperspectral.com/'>Cubert Hyperspectral</a>. Ulm, Germany.
+subtitle: Head of Artificial Intelligence @ <a href='https://cubert-hyperspectral.com/'>Cubert Hyperspectral</a>. Ulm, Germany.
 
 profile:
   align: right
@@ -29,7 +29,7 @@ I work at the intersection of computer vision, computer graphics, and machine le
 
 My path has taken me from academic research at the [Perceiving Systems Department](https://is.mpg.de/ps) of the [Max Planck Institute for Intelligent Systems](https://www.is.mpg.de/) to applied AI roles across health, sports technology, and industrial vision. At each stage, my focus has remained the same: turning visual data into structured insights and scalable real-world workflows.
 
-Today, I work at [Cubert GmbH](https://cubert-hyperspectral.com/) on AI frameworks, agentic tools, and data-processing systems for hyperspectral imaging, making advanced computer vision workflows more scalable, automated, and practical for industrial use.
+Today, I lead AI at [Cubert GmbH](https://cubert-hyperspectral.com/): AI frameworks, agentic tools, and data-processing systems for hyperspectral imaging, making advanced computer vision workflows more scalable, automated, and practical for industrial use.
 
 I combine research depth with engineering execution and product-oriented AI leadership, with experience spanning 3D human understanding, visual representation learning, applied machine learning, and AI system design.
 
