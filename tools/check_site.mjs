@@ -1,7 +1,8 @@
 // Interaction check for the site at desktop and mobile widths.
 // Opens the home page, clicks the theme toggle, opens the mobile menu, opens the publications
 // page, clicks a bib toggle, a "more authors" control and a preview image (zoom), opens search,
-// screenshots every state and fails on console errors, 4xx/5xx responses or missing controls.
+// screenshots every state and fails on console errors, 4xx/5xx responses, missing controls or a
+// search dialog that does not open.
 // Usage: node tools/check_site.mjs <base-url> <out-dir>
 // Needs the playwright package (npm ci, or npm i --no-save playwright) and a Chromium build
 // (npx playwright install chromium).
@@ -24,6 +25,7 @@ const controls = {
   moreAuthors: [".more-authors", "[aria-label*='more authors' i]", "button:has-text('more authors')", "a:has-text('more authors')"],
   zoom: ["img.zoomable", ".preview img", ".publications img", "figure img"],
   search: ["#search-toggle", "button[aria-label*='search' i]", "a[aria-label*='search' i]", ".search-toggle"],
+  searchDialog: ["ninja-keys[visible]", "ninja-keys input", "[role='dialog']", "input[type='search']", ".search-modal"],
 };
 
 const problems = [];
@@ -62,8 +64,8 @@ async function run(width, label) {
 
   await page.goto(`${base}/`, { waitUntil: "networkidle" });
   await shot("home");
-  await tryClick(page, label, "theme-toggled", controls.themeToggle, shot);
   if (width < 768) await tryClick(page, label, "menu-open", controls.mobileMenu, shot);
+  await tryClick(page, label, "theme-toggled", controls.themeToggle, shot);
 
   await page.goto(`${base}/publications/`, { waitUntil: "networkidle" });
   await shot("publications");
@@ -82,6 +84,10 @@ async function run(width, label) {
     await page.waitForTimeout(500);
     await shot("search-shortcut");
   }
+  if (!(await firstVisible(page, controls.searchDialog))) {
+    problems.push(`${label}: search dialog did not open (tried ${controls.searchDialog.join(", ")})`);
+  }
+  await page.keyboard.press("Escape");
 
   await page.goto(`${base}/cv/`, { waitUntil: "networkidle" });
   await shot("cv");

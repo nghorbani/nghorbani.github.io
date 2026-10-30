@@ -11,7 +11,7 @@ llms_code=""
 
 check() {
   local path="$1" code
-  code=$(curl -s -o /dev/null -w '%{http_code}' "$base$path")
+  code=$(curl -s --max-time 20 -o /dev/null -w '%{http_code}' "$base$path")
   if [ "$path" = "/llms.txt" ]; then llms_code="$code"; fi
   if [ "$code" = "200" ]; then
     echo "ok   $path"
@@ -28,7 +28,7 @@ for path in / /cv/ /publications/ /news/ /blog/ /blog/2026/hsi-industry-2026-gra
 done
 
 if [ "$llms_code" = "200" ]; then
-  body=$(curl -s "$base/llms.txt")
+  body=$(curl -s --max-time 20 "$base/llms.txt")
   if printf '%s' "$body" | grep -q -E '\{\{|\{%|<[a-zA-Z/]'; then
     echo "FAIL /llms.txt contains raw Liquid or HTML"
     fail=1
