@@ -1,0 +1,38 @@
+# Nima Ghorbani
+
+> Personal site of Nima Ghorbani, Head of Artificial Intelligence at Cubert Hyperspectral, Ulm,
+> Germany. Computer vision, hyperspectral imaging, 3D human understanding and applied machine learning.
+
+Sources of every page: https://github.com/nghorbani/nghorbani.github.io (Jekyll, al-folio theme).
+
+## Pages
+- [About](https://nghorbani.github.io/): bio and contact
+- [CV](https://nghorbani.github.io/cv/): education, experience, invited talks
+- [CV as PDF](https://nghorbani.github.io/assets/rendercv/rendercv_output/Nima_Ghorbani_CV.pdf)
+- [Publications](https://nghorbani.github.io/publications/)
+- [Blog](https://nghorbani.github.io/blog/)
+- [News](https://nghorbani.github.io/news/)
+
+## Publications
+(keep in sync with _bibliography/papers.bib)
+- 2024 The Poses for Equine Research Dataset (PFERD), Scientific Data: https://doi.org/10.1038/s41597-024-03312-1
+- 2021 SOMA: Solving Optical Marker-Based MoCap Automatically, ICCV: https://soma.is.tue.mpg.de/
+- 2021 hSMAL: Detailed Horse Shape and Pose Reconstruction for Motion Pattern Recognition, CV4Animals workshop at CVPR: https://arxiv.org/abs/2106.10102
+- 2020 GRAB: A Dataset of Whole-Body Human Grasping of Objects, ECCV: https://grab.is.tue.mpg.de/
+- 2019 Expressive Body Capture: 3D Hands, Face, and Body from a Single Image (SMPL-X), CVPR: https://smpl-x.is.tue.mpg.de/
+- 2019 AMASS: Archive of Motion Capture as Surface Shapes, ICCV: https://amass.is.tue.mpg.de/
+- 2018 Spike-triggered average electrical stimuli as input filters for bionic vision, a perspective, Journal of Neural Engineering: https://iopscience.iop.org/article/10.1088/1741-2552/aae493
+
+## Posts
+- [Speaking at the Conference for Hyperspectral Imaging in Industry 2026](https://nghorbani.github.io/blog/2026/hsi-industry-2026-graz/): Talk announcement — CuvisNext at HSI in Industry 2026, Graz-Gösting, Austria. (2026-05-15)
+
+## News
+- 2026-10-30: Speaking at the training course AI for spectral and hyperspectral data processing at Wageningen University & Research, 9 to 12 November 2026, Wageningen, the Netherlands. My lecture on 12 November: Cuvis.AI for RGB+: decisions beyond the visible.
+- 2026-09-08: Attending ECCV 2026 in Malmö, Sweden, 8–12 September 2026. Happy to meet and talk about hyperspectral imaging, industrial inspection, and AI for computer vision.
+- 2026-05-15: Speaking at the Conference for Hyperspectral Imaging in Industry 2026, 20–21 May 2026, Graz-Gösting, Austria — talk: CuvisNext: AI Evolution of Real-time Hyperspectral Intelligence.
+
+## Profiles
+- GitHub: https://github.com/nghorbani
+- Google Scholar: https://scholar.google.com/citations?user=8syFJ-0AAAAJ
+- LinkedIn: https://www.linkedin.com/in/nghorbani/
+- X: https://x.com/n__ghorbani
