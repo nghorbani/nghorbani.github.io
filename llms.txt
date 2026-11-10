@@ -11,7 +11,7 @@ Sources of every page: https://github.com/nghorbani/nghorbani.github.io (Jekyll,
 
 ## Pages
 - [About](https://nghorbani.github.io/): bio and contact
-- [CV](https://nghorbani.github.io/cv/): education, experience, invited talks
+- [CV](https://nghorbani.github.io/cv/): education (with MSc thesis), experience, invited talks
 - [CV as PDF](https://nghorbani.github.io/assets/rendercv/rendercv_output/Nima_Ghorbani_CV.pdf)
 - [Publications](https://nghorbani.github.io/publications/)
 - [Blog](https://nghorbani.github.io/blog/)
@@ -26,6 +26,7 @@ Sources of every page: https://github.com/nghorbani/nghorbani.github.io (Jekyll,
 - 2019 Expressive Body Capture: 3D Hands, Face, and Body from a Single Image (SMPL-X), CVPR: https://smpl-x.is.tue.mpg.de/
 - 2019 AMASS: Archive of Motion Capture as Surface Shapes, ICCV: https://amass.is.tue.mpg.de/
 - 2018 Spike-triggered average electrical stimuli as input filters for bionic vision, a perspective, Journal of Neural Engineering: https://iopscience.iop.org/article/10.1088/1741-2552/aae493
+- 2017 Generative Human Motion Modeling Using Deep Probabilistic Neural Networks, MSc thesis, University of Tübingen (advisor: Martin Giese): https://nghorbani.github.io/publications/
 
 ## Posts
 {% for post in site.posts %}- [{{ post.title }}]({{ post.url | absolute_url }}): {{ post.description }} ({{ post.date | date: "%Y-%m-%d" }})

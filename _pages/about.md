@@ -33,4 +33,4 @@ Today, I lead AI at [Cubert GmbH](https://cubert-hyperspectral.com/): AI framewo
 
 I combine research depth with engineering execution and product-oriented AI leadership, with experience spanning 3D human understanding, visual representation learning, applied machine learning, and AI system design.
 
-I hold a BSc in Electrical Engineering from Tabriz Azad University, Iran, and an MSc in [Neural Information Processing](https://www.neuroschool-tuebingen.de/) from [Eberhard Karls University of Tübingen](https://uni-tuebingen.de/), Germany.
+I hold a BSc in Electrical Engineering from Tabriz Azad University, Iran, and an MSc in [Neural Information Processing](https://www.neuroschool-tuebingen.de/) from [Eberhard Karls University of Tübingen](https://uni-tuebingen.de/), Germany. My MSc thesis, _Generative Human Motion Modeling Using Deep Probabilistic Neural Networks_ (2017), was advised by Prof. Martin Giese at the Hertie Institute for Clinical Brain Research.

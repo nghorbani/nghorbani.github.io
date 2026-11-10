@@ -19,6 +19,10 @@ cv:
         studyType: MSc
         start_date: 2015
         end_date: 2017
+        highlights:
+          - "Thesis: *Generative Human Motion Modeling Using Deep Probabilistic Neural Networks*."
+          - "Advisor: Prof. Dr. Martin Giese, Section for Computational Sensorimotorics, Hertie Institute for Clinical Brain Research, University Clinic Tübingen."
+          - "Second reader: Prof. Dr. Martin V. Butz, Cognitive Modeling, University of Tübingen."
 
       - institution: Tabriz Azad University
         location: Tabriz, Iran
